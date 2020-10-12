@@ -1,0 +1,14 @@
+# Estoque
+
+
+## Origem
+Controle de estoque baseado em https://github.com/rg3915/estoque.git
+
+##i Escopo
+
+* Linux
+* git
+* python 3.9.0
+* pyenv
+* pipenv
+* django
