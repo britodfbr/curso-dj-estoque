@@ -19,7 +19,7 @@ class Estoque(TimeStampedModel):
         return str(self.pk)
 
 
-class Estoque_Item(models.Model):
+class EstoqueItem(models.Model):
     estoque = models.ForeignKey(Estoque, on_delete=models.CASCADE)
     produto = models.ForeignKey(Produto, on_delete=models.CASCADE)
     quantidade = models.PositiveIntegerField()
@@ -29,4 +29,4 @@ class Estoque_Item(models.Model):
         ordering = 'pk',
 
     def __str__(self):
-        return f'{self.pk}-{self.estoque.pk}-{self.produto.pk}'
+        return f'{self.pk}-{self.estoque.pk}-{self.produto}'
